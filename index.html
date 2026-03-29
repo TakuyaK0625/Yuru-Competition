@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポンチ絵コンペティション | URA・研究企画向けイベント</title>
+    <meta name="description" content="ポンチ絵コンペティション開催！共通の題材をもとに1枚のポンチ絵を作成し、表現力を競い合うポップで楽しいイベントです。URA等の研究開発マネジメント人材大歓迎！">
+    
+    <!-- Google Fonts: Pop and rounded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="pen-tool"></i>
+                Yuru-Competition
+            </a>
+            <nav class="nav-links">
+                <a href="#about">イベント概要</a>
+                <a href="#rules">応募資格・参加費</a>
+                <a href="#schedule">スケジュール</a>
+                <a href="#judging">審査方法</a>
+                <a href="#apply" class="btn btn-sm btn-outline">お申し込み</a>
+            </nav>
+            <button class="menu-btn" aria-label="Menu" id="menuToggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">イベント概要</a>
+        <a href="#rules">応募資格・参加費</a>
+        <a href="#schedule">スケジュール</a>
+        <a href="#judging">審査方法</a>
+        <a href="#apply" class="btn btn-primary">お申し込み</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero bg-wave">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="badge">🔥 URA・研究マネジメント人材向け 🔥</span>
+                <h1 class="hero-title">ポンチ絵<br>コンペティション</h1>
+                <p class="hero-subtitle">
+                    共通の題材をもとに<strong>1枚の「ポンチ絵」</strong>を作る、楽しくてゆるいコンペティション！<br>
+                    初級レベルから上級レベルの方まで、どなたでも大歓迎。あなたのアイデアを視覚化して、みんなで盛り上がろう！
+                </p>
+                <div class="hero-actions">
+                    <a href="#apply" class="btn btn-primary btn-lg">今すぐエントリーする</a>
+                    <a href="#about" class="btn btn-secondary btn-lg">イベント詳細を見る</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- 生成された画像をここに配置します -->
+                <img src="./assets/yuru_ponchi.png" alt="ポンチ絵コンペティション イメージイラスト" class="bounce-anim" id="heroImg">
+                <!-- 装飾シェイプ -->
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>コンセプト・イベント概要 <i data-lucide="lightbulb" class="icon-inline"></i></h2>
+                <p>そもそもポンチ絵って？なぜコンペティション？</p>
+            </div>
+            <div class="about-grid">
+                <div class="card card-pop">
+                    <div class="card-icon bg-yellow"><i data-lucide="image"></i></div>
+                    <h3>1枚のポンチ絵で勝負！</h3>
+                    <p>研究やプロジェクトの魅力を1枚のスライドや画像（ポンチ絵）にまとめるスキルは、現代のURAやマネジメント層にとって必須です。このコンペでは「共通のお題」を元に、それぞれの切り口でポンチ絵を作成します。</p>
+                </div>
+                <div class="card card-pop">
+                    <div class="card-icon bg-blue"><i data-lucide="users"></i></div>
+                    <h3>ゆるく楽しく交流</h3>
+                    <p>堅苦しい発表会ではありません。他の人がどういう構成で、どういうデザインでまとめているかを見せ合い、学び合う「お祭り」のようなコンペティションです。</p>
+                </div>
+                <div class="card card-pop">
+                    <div class="card-icon bg-orange"><i data-lucide="trending-up"></i></div>
+                    <h3>初級から上級まで歓迎！</h3>
+                    <p>「イラストが描けない」「PowerPointしか使えない」という初心者でも大丈夫！大切なのは「いかに情報をわかりやすく伝えるか」という構成力です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>応募資格・参加費 <i data-lucide="award" class="icon-inline"></i></h2>
+            </div>
+            
+            <div class="rules-container">
+                <div class="rule-box">
+                    <h3>👥 応募資格</h3>
+                    <ul class="check-list">
+                        <li><i data-lucide="check-circle-2"></i> 大学・研究機関などの<strong>URA（リサーチ・アドミニストレーター）</strong>の方</li>
+                        <li><i data-lucide="check-circle-2"></i> <strong>研究開発マネジメント</strong>や産学連携に関わっている方</li>
+                        <li><i data-lucide="check-circle-2"></i> ポンチ絵スキルを上げたい、他人の作品を見たいという熱意のある方！</li>
+                    </ul>
+                    <p class="note">※ 所属機関は問いません。個人単位でのエントリーとなります。</p>
+                </div>
+                
+                <div class="rule-box cost-box">
+                    <h3>💰 参加費</h3>
+                    <div class="price">
+                        <span class="currency">無料</span>
+                    </div>
+                    <p>本イベントは有志のコミュニティによって運営されているため、参加費は<strong>無料</strong>です！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>スケジュール <i data-lucide="calendar" class="icon-inline"></i></h2>
+                <p>エントリーから結果発表までの流れ</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">近日公開</div>
+                    <div class="timeline-content">
+                        <h4>エントリー受付開始 & お題発表</h4>
+                        <p>公式サイト上およびメールにて、共通の「お題（研究テーマ等）」を発表します。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">受付開始から約3週間</div>
+                    <div class="timeline-content">
+                        <h4>作品提出締切</h4>
+                        <p>作成したポンチ絵（PDFまたは画像データ）を提出フォームからお送りください。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">提出締切後およそ2週間</div>
+                    <div class="timeline-content">
+                        <h4>オンライン審査・投票</h4>
+                        <p>参加者・審査員によるオンライン上での作品閲覧と投票期間です。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot timeline-dot-final"></div>
+                    <div class="timeline-date">未定</div>
+                    <div class="timeline-content">
+                        <h4>結果発表 & オンライン交流会</h4>
+                        <p>Zoom等を用いたオンラインイベント形式で、優秀作品の表彰と講評、参加者同士の交流を行います。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Judging Section -->
+    <section id="judging" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>審査方法 <i data-lucide="gavel" class="icon-inline"></i></h2>
+                <p>上手い下手だけじゃない、多様な評価ポイント！</p>
+            </div>
+            
+            <div class="judging-grid">
+                <div class="judge-card">
+                    <div class="judge-circle bg-yellow">1</div>
+                    <h4>分かりやすさ (Clarity)</h4>
+                    <p>専門外の人にも情報がスッと入ってくるか、情報の取捨選択が適切に行われているか。</p>
+                </div>
+                <div class="judge-card">
+                    <div class="judge-circle bg-orange">2</div>
+                    <h4>構成力 (Structure)</h4>
+                    <p>視線の誘導や、レイアウト・配置の工夫によってストーリーが伝わるか。</p>
+                </div>
+                <div class="judge-card">
+                    <div class="judge-circle bg-blue">3</div>
+                    <h4>デザイン性 (Design)</h4>
+                    <p>配色、フォント選び、余白の使い方など、視覚的に惹きつける魅力があるか。</p>
+                </div>
+                <div class="judge-card">
+                    <div class="judge-circle bg-pink">4</div>
+                    <h4>審査員特別賞！</h4>
+                    <p>「一番ユーモアがあった！」「独自の切り口だった！」など、特定の基準で選ばれるユニークな賞も用意予定！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply (CTA) Section -->
+    <section id="apply" class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>さぁ、ポンチ絵の腕試しをしよう！</h2>
+                <p>「まだ自信がない…」という方も、他の人の作品を見るだけで大変勉強になります。まずはエントリーボタンからご登録をお願いします！（PeatixまたはGoogle Formへ遷移します）</p>
+                <a href="#" class="btn btn-primary btn-xl">無料でエントリーする <i data-lucide="arrow-right"></i></a>
+                <p class="cta-note">※現在は事前登録期間です。詳細案内は登録されたメールアドレス宛に送られます。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <i data-lucide="pen-tool"></i>
+                Yuru-Competition
+            </div>
+            <div class="footer-links">
+                <a href="#about">概要</a>
+                <a href="#rules">応募資格</a>
+                <a href="#schedule">スケジュール</a>
+            </div>
+            <div class="socials">
+                <a href="#"><i data-lucide="twitter"></i></a>
+                <a href="https://github.com/TakuyaK0625/Yuru-Competition" target="_blank"><i data-lucide="github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Yuru-Competition Project by URA Community.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
