@@ -892,3 +892,18 @@ ul {
     color: var(--c-text);
     line-height: 1.8;
 }
+
+.modal-text a {
+    color: var(--c-primary);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+    font-weight: bold;
+    transition: var(--trans);
+}
+
+.modal-text a:hover {
+    color: var(--c-primary-dark);
+    text-decoration-style: solid;
+    background-color: var(--c-bg-light);
+}
