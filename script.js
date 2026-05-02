@@ -49,7 +49,7 @@ const judgeProfiles = {
         name: "富田 誠",
         title: "東海大学<br>教養学部芸術学科<br>教授",
         img: "./assets/judge_tomita.jpeg",
-        profile: "武蔵野美術大学基礎デザイン学科卒業。早稲田大学大学院国際情報通信研究科修了。デザインエンジニアリング系のスタートアップ創業、早稲田大学政治学研究科助手などを経て、現職。他に、厚生労働省広報室参与、年金広報構成員、総務省行政評価局アドバイザー、日本デザイン学会理事など。近年は様々な人たちによる共創を支援するための視覚的対話に取り組むほか、「みんなが作れるポンチ絵Project」を主催（<a href='https://tomita.me/visuallogue/punch/' target='_blank'>https://tomita.me/visuallogue/punch/</a>）。"
+        profile: "武蔵野美術大学基礎デザイン学科卒業。早稲田大学大学院国際情報通信研究科修了。デザインエンジニアリング系のスタートアップ創業、早稲田大学政治学研究科助手などを経て、現職。他に、厚生労働省広報室参与、年金広報構成員、総務省行政評価局アドバイザー、日本デザイン学会理事など。近年は様々な人たちによる共創を支援するための視覚的対話に取り組むほか、「<a href='https://tomita.me/visuallogue/punch/' target='_blank'>みんなが作れるポンチ絵Project</a>」を主催。"
     },
     kikuchi: {
         name: "菊地 英明",
