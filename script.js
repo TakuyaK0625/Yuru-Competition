@@ -55,7 +55,7 @@ const judgeProfiles = {
         name: "菊地 英明",
         title: "厚生労働省<br>年金局<br>総務課長補佐",
         img: "https://ui-avatars.com/api/?name=Judge+2&background=93D5CC&color=328176&size=150",
-        profile: "厚生労働省に入省後、年金制度改正や社会保障協定、広報に携わり、広報コンテンツ制作や公的年金シミュレーター（<a href='https://nenkin-shisan.mhlw.go.jp/' target='_blank'>https://nenkin-shisan.mhlw.go.jp/</a>）の設計・リリースを主導。年金広報コンテンツは国連ILO（国際労働機関）の関係機関である国際社会保障協会の「ISSA Good Practice Award competition for Asia and the Pacific」において２回連続で特別優秀賞を受賞する。復興庁の「持続可能な復興広報を考える検討会議」にも従事するとともに、現在は内閣府において〇〇を担当する。"
+        profile: "厚生労働省に入省後、年金制度改正や社会保障協定、広報に携わり、広報コンテンツ制作や<a href='https://nenkin-shisan.mhlw.go.jp/' target='_blank'>公的年金シミュレーター</a>の設計・リリースを主導。年金広報コンテンツは国連ILO（国際労働機関）の関係機関である国際社会保障協会の「ISSA Good Practice Award competition for Asia and the Pacific」において２回連続で特別優秀賞を受賞する。復興庁の「持続可能な復興広報を考える検討会議」にも従事するとともに、現在は内閣府において〇〇を担当する。"
     },
     tokuda: {
         name: "徳田 加奈",
