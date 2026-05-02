@@ -54,19 +54,19 @@ const judgeProfiles = {
     kikuchi: {
         name: "菊地 英明",
         title: "厚生労働省<br>年金局<br>総務課長補佐",
-        img: "https://ui-avatars.com/api/?name=Judge+2&background=93D5CC&color=328176&size=150",
+        img: "https://ui-avatars.com/api/?name=Judge+2&background=93D5CC&color=328176&size=200",
         profile: "厚生労働省に入省後、年金制度改正や社会保障協定、広報に携わり、広報コンテンツ制作や<a href='https://nenkin-shisan.mhlw.go.jp/' target='_blank'>公的年金シミュレーター</a>の設計・リリースを主導。年金広報コンテンツは国連ILO（国際労働機関）の関係機関である国際社会保障協会の「ISSA Good Practice Award competition for Asia and the Pacific」において２回連続で特別優秀賞を受賞する。復興庁の「持続可能な復興広報を考える検討会議」にも従事するとともに、現在は内閣府において〇〇を担当する。"
     },
     tokuda: {
         name: "徳田 加奈",
         title: "RA協議会<br>スキルプログラム専門委員会<br>委員長",
-        img: "https://ui-avatars.com/api/?name=Judge+3&background=FFA2A2&color=B33D3D&size=150",
+        img: "https://ui-avatars.com/api/?name=Judge+3&background=FFA2A2&color=B33D3D&size=200",
         profile: "URAとしての実務経験を活かし、全国のURA向けスキルアッププログラムの企画・運営を主導。研究者の支援に必要なコミュニケーションスキルの体系化に取り組む。"
     },
     tsumura: {
         name: "津村 明子",
         title: "横浜国立大学<br>研究推進機構<br>准教授/URA",
-        img: "https://ui-avatars.com/api/?name=Judge+4&background=FF7B54&color=FFF&size=150",
+        img: "https://ui-avatars.com/api/?name=Judge+4&background=FF7B54&color=FFF&size=200",
         profile: "大学における研究戦略立案、大型プロジェクトの企画提案・推進を担う。専門分野を越えたコミュニケーションを促進するための資料作成や可視化の手法を探求している。"
     }
 };
