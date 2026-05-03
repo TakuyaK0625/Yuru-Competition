@@ -653,6 +653,11 @@ ul {
     border-radius: 50%;
 }
 
+img[src*="judge_tomita"] {
+    transform: scale(1.25);
+    transform-origin: center 25%;
+}
+
 .judge-title {
     font-size: 14px;
     color: var(--c-text-light);
