@@ -707,6 +707,11 @@ img[src*="judge_tomita"] {
     transform: scale(1.45) translateY(-2%);
 }
 
+img[src*="judge_tsumura"] {
+    transform: scale(2.6);
+    transform-origin: 52% 10%;
+}
+
 img[src*="judge_tokuda"] {
     width: 100%;
     height: 100%;
