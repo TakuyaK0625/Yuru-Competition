@@ -7,6 +7,22 @@
     <title>ポンチ絵コンペティション | URA等の研究開発マネジメント向けイベント</title>
     <meta name="description" content="ポンチ絵コンペティション開催！共通の題材をもとに1枚のポンチ絵を作成し、表現力を競い合うポップで楽しいイベントです。URA等の研究開発マネジメント人材大歓迎！">
 
+    <!-- OGP (Open Graph Protocol) Tags for Facebook/SNS sharing -->
+    <meta property="og:title" content="ポンチ絵コンペティション | URA等の研究開発マネジメント向けイベント">
+    <meta property="og:description"
+        content="ポンチ絵コンペティション開催！共通の題材をもとに1枚のポンチ絵を作成し、表現力を競い合うポップで楽しいイベントです。URA等の研究開発マネジメント人材大歓迎！">
+    <meta property="og:image" content="https://takuyak0625.github.io/Yuru-Competition/assets/yuru_ponchi.png">
+    <meta property="og:url" content="https://takuyak0625.github.io/Yuru-Competition/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ゆるコンペ">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ポンチ絵コンペティション | URA等の研究開発マネジメント向けイベント">
+    <meta name="twitter:description"
+        content="ポンチ絵コンペティション開催！共通の題材をもとに1枚のポンチ絵を作成し、表現力を競い合うポップで楽しいイベントです。URA等の研究開発マネジメント人材大歓迎！">
+    <meta name="twitter:image" content="https://takuyak0625.github.io/Yuru-Competition/assets/yuru_ponchi.png">
+
     <!-- Google Fonts: Pop and rounded -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,18 +41,28 @@
 
     <!-- Header / Navbar -->
     <header class="header">
+        <div class="top-announcement">
+            <div class="container announcement-container">
+                <span class="announcement-badge">NEW</span>
+                <span class="announcement-text">実施説明会のスライド資料・動画アーカイブを公開しました！</span>
+                <a href="#archive" class="announcement-link">詳細はこちら <i data-lucide="arrow-right"
+                        style="width: 12px; height: 12px; vertical-align: middle;"></i></a>
+            </div>
+        </div>
         <div class="container nav-container">
             <a href="#" class="logo">
                 <i data-lucide="pen-tool"></i>
                 ゆるコンペ
             </a>
             <nav class="nav-links">
-                <a href="#about">イベント概要</a>
-                <a href="#rules">応募資格・参加費</a>
+                <a href="#about">概要</a>
+                <a href="#archive">説明会</a>
+                <a href="#rules">応募資格</a>
                 <a href="#theme">お題</a>
-                <a href="#schedule">スケジュール</a>
+                <a href="#schedule">日程</a>
                 <a href="#judges">審査員</a>
-                <a href="#apply" class="btn btn-sm btn-outline">お申し込み</a>
+                <a href="workshop/index.html">ワークショップ</a>
+                <a href="#apply" class="btn btn-sm btn-outline">エントリー</a>
             </nav>
             <button class="menu-btn" aria-label="Menu" id="menuToggle">
                 <i data-lucide="menu"></i>
@@ -46,12 +72,14 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="#about">イベント概要</a>
-        <a href="#rules">応募資格・参加費</a>
+        <a href="#about">概要</a>
+        <a href="#archive">説明会</a>
+        <a href="#rules">応募資格</a>
         <a href="#theme">お題</a>
-        <a href="#schedule">スケジュール</a>
+        <a href="#schedule">日程</a>
         <a href="#judges">審査員</a>
-        <a href="#apply" class="btn btn-primary">お申し込み</a>
+        <a href="workshop/index.html">ワークショップ</a>
+        <a href="#apply" class="btn btn-primary">エントリー</a>
     </div>
 
     <!-- Hero Section -->
@@ -79,6 +107,21 @@
         </div>
     </section>
 
+    <!-- Explanatory Meeting Archive Section -->
+    <section id="archive" class="section-archive">
+        <div class="container">
+            <div class="archive-simple-content animate-fade-in">
+                <span class="badge badge-archive-simple">🎥 アーカイブ公開中</span>
+                <h2>説明会資料・動画 <i data-lucide="presentation" class="icon-inline"></i></h2>
+                <p>先日開催された「実施説明会」のスライド資料と録画動画を公開しました。作品制作のヒントとしてぜひご活用ください。</p>
+                <a href="https://www.dropbox.com/scl/fo/8bowk5b487u7ny4cewzrl/APWYStRfER568LuGBSQzhY0?rlkey=g7xrlwrfufiqhjvp84kgzi90b&st=3so3pr4y&dl=0"
+                    target="_blank" class="btn btn-primary btn-lg">
+                    説明会アーカイブを見る (Dropbox) <i data-lucide="external-link"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="section bg-light">
         <div class="container">
@@ -102,7 +145,7 @@
                 <div class="card card-pop">
                     <div class="card-icon bg-orange"><i data-lucide="trending-up"></i></div>
                     <h3>初級から上級まで大歓迎！</h3>
-                    <p>ポンチ絵初心者でも大丈夫！千里も道も一歩から！パワポでもイラレでも生成AIでもなんでも使ってOK！大切なのは「いかに情報をわかりやすく伝えるか」という構成力とあなたのオリジナリティです。</p>
+                    <p>ポンチ絵初心者でも大丈夫！千里の道も一歩から！パワポでもイラレでも生成AIでもなんでも使ってOK！大切なのは「いかに情報をわかりやすく伝えるか」という構成力とあなたのオリジナリティです。</p>
                 </div>
             </div>
         </div>
@@ -119,8 +162,13 @@
                 <div class="rule-box">
                     <h3>👥 応募資格</h3>
                     <ul class="check-list">
-                        <li><i data-lucide="check-circle-2"></i> RA協議会会員</strong>の方</li>
-                        <li><i data-lucide="check-circle-2"></i> 「ゆるコンペワークショップ：ポンチ絵編」に参加された方</li>
+                        <li><i data-lucide="check-circle-2"></i> <strong>RA協議会会員</strong>の方</li>
+                        <li><i data-lucide="check-circle-2"></i>
+                            <div>
+                                「ゆるコンペワークショップ：ポンチ絵編」に参加された方<br>
+                                <a href="workshop/index.html" style="color: var(--c-primary); text-decoration: underline; font-weight: bold; font-size: 15px; display: inline-block; margin-top: 4px;">（開催報告はこちら）</a>
+                            </div>
+                        </li>
                     </ul>
                     <p class="note">※ 所属機関は問いません。個人単位でのエントリーとなります。</p>
                 </div>
@@ -144,20 +192,6 @@
                 <p>今回のコンペティションで取り組んでいただくテーマです</p>
             </div>
 
-            <!-- ▼▼▼ 未公開用パーツ（6月1日までこちらを表示） ▼▼▼ -->
-            <div class="theme-content card"
-                style="max-width: 800px; margin: 0 auto; padding: 50px; border-top: 6px solid #ccc; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); text-align: center;">
-                <div class="card-icon bg-yellow" style="margin: 0 auto 24px;"><i data-lucide="lock"></i></div>
-                <h3 style="font-size: 24px; color: var(--c-text); margin-bottom: 16px;">お題は準備中です</h3>
-                <p style="font-size: 16px; color: var(--c-text-light);">
-                    共通のお題（テーマ等）は、<strong>6月1日</strong> にこちらのセクションで発表予定です。<br>
-                    公開まで今しばらくお待ちください！
-                </p>
-            </div>
-            <!-- ▲▲▲ 未公開用パーツ ここまで ▲▲▲ -->
-
-            <!-- ▼▼▼ 公開用パーツ（6月1日以降はこちらを表示し、上の未公開パーツを消すかコメントアウト） ▼▼▼ -->
-            <!--
             <div class="theme-content card"
                 style="max-width: 800px; margin: 0 auto; padding: 50px; border-top: 6px solid var(--c-primary); border-radius: var(--radius-lg); box-shadow: var(--shadow-card);">
                 <div class="card-icon bg-pink" style="margin: 0 auto 24px;"><i data-lucide="lightbulb"></i></div>
@@ -212,15 +246,17 @@
                             style="width: 18px; height: 18px; vertical-align: text-bottom; color: var(--c-text-light);"></i>
                         提出・作品に関する注意点</h4>
                     <p style="margin-bottom: 8px; font-size: 14px; color: var(--c-text-light);">
-                        提出作品の著作権は応募者に帰属します。ただし、応募者は本イベントの広報および教育目的のため、主催者および本企画に協力した機関が応募作品をウェブサイトや資料等で公開・紹介することを許諾するものとします。
-                    </p>
-                    <p style="margin-bottom: 0; font-size: 14px; color: var(--c-text-light);">
                         応募作品は応募者自身が作成した未発表のものに限ります。また、第三者の著作権、商標権その他の権利を侵害しないものとしてください。これらに関して問題が生じた場合は、応募者の責任において対応するものとします。
                     </p>
+                    <p style="margin-bottom: 8px; font-size: 14px; color: var(--c-text-light);">
+                        提出作品の著作権は応募者に帰属します。ただし、応募者は、本イベントの広報、教育および報告等を目的として、主催者および協力機関が応募作品を参加者向け資料、ウェブサイト、冊子、発表資料、展示等において無償で利用、公開および紹介することを許諾するものとします。
+                    </p>
+                    <p style="margin-bottom: 8px; font-size: 14px; color: var(--c-text-light);">
+                        主催者は、表彰作品の紹介その他本イベントの運営上必要な場合には、応募者の氏名や所属を併記することがあります。なお、個人情報の取り扱いにあたっては、必要に応じて適切な配慮を行います。
+                    </p>
+
                 </div>
             </div>
-        -->
-            <!-- ▲▲▲ 公開用パーツ ここまで ▲▲▲ -->
         </div>
     </section>
 
@@ -250,7 +286,7 @@
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">８月⚫︎日（⚫︎）</div>
+                    <div class="timeline-date">８月12日（水）</div>
                     <div class="timeline-content">
                         <h4>投稿締め切り</h4>
                         <p>投稿フォームよりポンチ絵を投稿してください。</p>
@@ -330,9 +366,13 @@
         <div class="container">
             <div class="cta-box">
                 <h2>さぁ、ポンチ絵の腕試しをしよう！</h2>
-                <p>「まだ自信がない…」という方も、他の人の作品を見るだけで大変勉強になります。まずはエントリーボタンからご登録をお願いします！（Google Formへ遷移します）</p>
-                <a href="#" class="btn btn-primary btn-xl">無料でエントリーする <i data-lucide="arrow-right"></i></a>
-                <p class="cta-note">お問い合わせ：RA協議会スキルプログラム専門委員会（skillpro-committee@rman.jp）</p>
+                <p>「まだ自信がない…」という方も、この機会にみんなと一緒に実践してみませんか？まずはエントリーボタンからご登録をお願いします！（Google Formへ遷移します）</p>
+                <a href="https://forms.gle/M8hG1rNooPNb14QD6" target="_blank" class="btn btn-primary btn-xl">エントリーする <i
+                        data-lucide="arrow-right"></i></a>
+                <p class="cta-note">
+                    お問い合わせは、<a href="https://forms.gle/kbM6Da1PVxoc7uKL7" target="_blank"
+                        style="color: white; text-decoration: underline; font-weight: bold;">お問い合わせフォーム</a>よりお願いいたします。
+                </p>
             </div>
         </div>
     </section>
@@ -347,12 +387,9 @@
             <div class="footer-links">
                 <a href="#about">概要</a>
                 <a href="#rules">応募資格</a>
-                <a href="#schedule">スケジュール</a>
-            </div>
-            <div class="socials">
-                <a href="#"><i data-lucide="twitter"></i></a>
-                <a href="https://github.com/TakuyaK0625/Yuru-Competition" target="_blank"><i
-                        data-lucide="github"></i></a>
+                <a href="#schedule">日程</a>
+                <a href="workshop/index.html">ワークショップ</a>
+                <a href="contact.html">お問い合わせ</a>
             </div>
         </div>
         <div class="footer-bottom">

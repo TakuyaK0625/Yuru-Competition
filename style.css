@@ -270,7 +270,7 @@ ul {
 /* Mobile Menu */
 .mobile-menu {
     position: fixed;
-    top: 70px;
+    top: 102px;
     left: 0;
     width: 100%;
     background: white;
@@ -992,4 +992,103 @@ img[src*="judge_tokuda"] {
     color: var(--c-primary-dark);
     text-decoration-style: solid;
     background-color: var(--c-bg-light);
+}
+
+/* Explanatory Meeting Archive Section */
+.section-archive {
+    padding: 60px 0;
+    background-color: var(--c-bg-light);
+    border-bottom: 2px dashed rgba(255, 123, 84, 0.15);
+    text-align: center;
+}
+
+.archive-simple-content {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 24px;
+}
+
+.badge-archive-simple {
+    background-color: var(--c-tertiary) !important;
+    color: #328176 !important;
+    margin-bottom: 0 !important;
+}
+
+.archive-simple-content h2 {
+    font-size: 32px;
+    color: var(--c-text);
+    margin-bottom: 0;
+}
+
+.archive-simple-content p {
+    font-size: 16px;
+    color: var(--c-text-light);
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .section-archive {
+        padding: 40px 0;
+    }
+    
+    .archive-simple-content h2 {
+        font-size: 26px;
+    }
+    
+    .archive-simple-content p {
+        font-size: 15px;
+    }
+    
+    .top-announcement {
+        font-size: 11px;
+    }
+    
+    .announcement-badge {
+        padding: 1px 4px;
+    }
+}
+
+/* Top Announcement Bar */
+.top-announcement {
+    background-color: var(--c-primary);
+    color: white;
+    font-size: 13px;
+    padding: 6px 0;
+    text-align: center;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.announcement-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.announcement-badge {
+    background-color: white;
+    color: var(--c-primary);
+    font-size: 10px;
+    font-weight: 800;
+    padding: 1px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+.announcement-link {
+    color: white;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.announcement-link:hover {
+    color: var(--c-secondary);
 }
