@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>受賞作品発表 | ポンチ絵コンペティション</title>
+    <meta name="description"
+        content="ポンチ絵コンペティションの受賞作品が決定しました！参加者間投票賞、Good Design賞、Design Attitude賞、Organized Design賞、Logical Design賞の受賞作5点と審査員評を公開中。">
+
+    <!-- OGP Tags -->
+    <meta property="og:title" content="受賞作品発表 | ポンチ絵コンペティション">
+    <meta property="og:description" content="ポンチ絵コンペティションの受賞作品が決定！全5賞の素晴らしい作品と解説をご覧ください。">
+    <meta property="og:image" content="https://takuyak0625.github.io/Yuru-Competition/assets/yuru_ponchi.png">
+    <meta property="og:url" content="https://takuyak0625.github.io/Yuru-Competition/winners.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="ゆるコンペ">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Top Announcement -->
+    <header class="header">
+        <div class="top-announcement">
+            <div class="container announcement-container">
+                <span class="announcement-badge">ANNOUNCEMENT</span>
+                <span class="announcement-text">🏆 ポンチ絵コンペティション受賞作品を公開中！</span>
+                <a href="#vote" class="announcement-link">受賞作品を見る <i data-lucide="arrow-down"
+                        style="width: 12px; height: 12px; vertical-align: middle;"></i></a>
+            </div>
+        </div>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="pen-tool"></i>
+                ゆるコンペ
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#about">概要</a>
+                <a href="index.html#rules">応募資格</a>
+                <a href="index.html#theme">お題</a>
+                <a href="index.html#schedule">日程</a>
+                <a href="index.html#judges">審査員</a>
+                <a href="winners.html" class="nav-highlight">🏆 受賞作品</a>
+                <a href="workshop/index.html">ワークショップ</a>
+            </nav>
+            <button class="menu-btn" aria-label="Menu" id="menuToggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#about">概要</a>
+        <a href="index.html#rules">応募資格</a>
+        <a href="index.html#theme">お題</a>
+        <a href="index.html#schedule">日程</a>
+        <a href="index.html#judges">審査員</a>
+        <a href="winners.html" style="font-weight: bold; color: var(--c-primary);">🏆 受賞作品</a>
+        <a href="workshop/index.html">ワークショップ</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="winners-hero">
+        <div class="container">
+            <div class="winners-hero-badge">
+                <i data-lucide="trophy"></i> 受賞作決定・全5賞発表
+            </div>
+            <h1 class="winners-hero-title">ポンチ絵コンペティション<br><span style="color: var(--c-primary);">受賞作品発表</span></h1>
+            <p class="winners-hero-subtitle">
+                皆様から寄せられた30点の素晴らしいポンチ絵作品の中から、審査員による厳正な審査と参加者間相互投票を経て、栄えある5つの受賞作品を決定いたしました！
+            </p>
+        </div>
+    </section>
+
+    <!-- Winners Section -->
+    <section class="winners-section">
+        <div class="container">
+
+            <!-- Card 1: 参加者間投票賞 -->
+            <div class="winner-card award-vote" id="vote" data-category="vote">
+                <div class="winner-card-header">
+                    <div class="award-badge-large">
+                        <i data-lucide="crown"></i> 参加者間投票賞
+                    </div>
+                    <span class="award-subtitle"></span>
+                </div>
+                <div class="winner-card-body">
+                    <div class="winner-meta-grid">
+                        <div class="winner-preview-box" onclick="openWorkModal('vote')">
+                            <img src="./assets/winner_vote.png" alt="参加者間投票賞 受賞作品">
+                            <div class="preview-overlay-btn">
+                                <i data-lucide="maximize-2"></i> 拡大して見る
+                            </div>
+                        </div>
+                        <div class="winner-info-content">
+                            <h3 class="work-title">参加者同士の相互投票で最も大きな支持と共感を集めた作品</h3>
+                            <div class="winner-author-info">
+                                <i data-lucide="user-check" style="color: var(--c-primary);"></i>
+                                <div>
+                                    <div class="winner-author-name">鴨井 理紗 氏</div>
+                                    <div class="winner-author-org">新潟大学 経営戦略本部UA室 一般UA</div>
+                                </div>
+                            </div>
+                            <div class="evaluation-box">
+                                <h5><i data-lucide="thumbs-up"></i> 主なコメント</h5>
+                                <ul style="list-style: none; margin-top: 8px; padding-left: 0;">
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; margin-bottom: 6px; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>手書き風の柔らかさが良い</span>
+                                    </li>
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; margin-bottom: 6px; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>ストーリー仕立てがわかりやすい</span>
+                                    </li>
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>生成AIをどのように使って作ったのか知りたい</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Good Design賞 -->
+            <div class="winner-card award-good-design" id="good-design" data-category="good-design">
+                <div class="winner-card-header">
+                    <div class="award-badge-large">
+                        <i data-lucide="award"></i> Good Design賞
+                    </div>
+                    <span class="award-subtitle"></span>
+                </div>
+                <div class="winner-card-body">
+                    <div class="winner-meta-grid">
+                        <div class="winner-preview-box" onclick="openWorkModal('good-design')">
+                            <img src="./assets/winner_good_design.png" alt="Good Design賞 受賞作品">
+                            <div class="preview-overlay-btn">
+                                <i data-lucide="maximize-2"></i> 拡大して見る
+                            </div>
+                        </div>
+                        <div class="winner-info-content">
+                            <h3 class="work-title">全体のバランスと、短くても伝わるコピーが秀逸な作品</h3>
+                            <div class="winner-author-info">
+                                <i data-lucide="user-check" style="color: var(--c-primary);"></i>
+                                <div>
+                                    <div class="winner-author-name">川谷　健一 氏</div>
+                                    <div class="winner-author-org">富山大学　学術研究・産学連携本部 コーディネーター</div>
+                                </div>
+                            </div>
+                            <div class="evaluation-box">
+                                <h5><i data-lucide="star"></i> 選考理由・受賞のポイント</h5>
+                                <ul style="list-style: none; margin-top: 8px; padding-left: 0;">
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; margin-bottom: 6px; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>見出しと本文の関係が明快で、システム全体を一目で捉えられる。</span>
+                                    </li>
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; margin-bottom: 6px; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>文章量・文字サイズ・言葉の選び方が整い、読み進めやすい。</span>
+                                    </li>
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>生成AIの要約を申請書に照らして修正したり、必要な情報を厳選しているところにデザイン活動が含まれる。</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Design Attitude賞 -->
+            <div class="winner-card award-attitude" id="attitude" data-category="attitude">
+                <div class="winner-card-header">
+                    <div class="award-badge-large">
+                        <i data-lucide="heart-handshake"></i> Design Attitude賞
+                    </div>
+                    <span class="award-subtitle"></span>
+                </div>
+                <div class="winner-card-body">
+                    <div class="winner-meta-grid">
+                        <div class="winner-preview-box" onclick="openWorkModal('attitude')">
+                            <img src="./assets/winner_attitude.png" alt="Design Attitude賞 受賞作品">
+                            <div class="preview-overlay-btn">
+                                <i data-lucide="maximize-2"></i> 拡大して見る
+                            </div>
+                        </div>
+                        <div class="winner-info-content">
+                            <h3 class="work-title">違和感を起点に理解と表現を探究した制作姿勢が認められる作品</h3>
+                            <div class="winner-author-info">
+                                <i data-lucide="user-check" style="color: var(--c-primary);"></i>
+                                <div>
+                                    <div class="winner-author-name">下山 せいら 氏</div>
+                                    <div class="winner-author-org">北海道大学 統合URA本部　URA</div>
+                                </div>
+                            </div>
+                            <div class="evaluation-box">
+                                <h5><i data-lucide="heart"></i> 選考理由・受賞のポイント</h5>
+                                <ul style="list-style: none; margin-top: 8px; padding-left: 0;">
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; margin-bottom: 6px; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>デザインにおいて重要な「何か違う」という感覚を見逃さず、対象の理解と表現方法を模索する姿勢が見られる。</span>
+                                    </li>
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; margin-bottom: 6px; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>表現方法を模索し、自作ピクトグラムなど創造的な工夫へつなげた。</span>
+                                    </li>
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>制作の苦労を妖怪「ナンカチガウナー」に託す発想に、作り手の変容と作る楽しさが感じられて面白い。</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Organized Design賞 -->
+            <div class="winner-card award-organized" id="organized" data-category="organized">
+                <div class="winner-card-header">
+                    <div class="award-badge-large">
+                        <i data-lucide="layers"></i> Organized Design賞
+                    </div>
+                    <span class="award-subtitle"></span>
+                </div>
+                <div class="winner-card-body">
+                    <div class="winner-meta-grid">
+                        <div class="winner-preview-box" onclick="openWorkModal('organized')">
+                            <img src="./assets/winner_organized.png" alt="Organized Design賞 受賞作品">
+                            <div class="preview-overlay-btn">
+                                <i data-lucide="maximize-2"></i> 拡大して見る
+                            </div>
+                        </div>
+                        <div class="winner-info-content">
+                            <h3 class="work-title">組織変革や事業構造をひと目で分かる形に整理した作品</h3>
+                            <div class="winner-author-info">
+                                <i data-lucide="user-check" style="color: var(--c-primary);"></i>
+                                <div>
+                                    <div class="winner-author-name">大島 美緒羅 氏</div>
+                                    <div class="winner-author-org">情報通信研究機構 人事室・NRAユニット</div>
+                                </div>
+                            </div>
+                            <div class="evaluation-box">
+                                <h5><i data-lucide="box"></i> 選考理由・受賞のポイント</h5>
+                                <ul style="list-style: none; margin-top: 8px; padding-left: 0;">
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; margin-bottom: 6px; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>ビジョン、課題、解決策、取組の流れが分かりやすい</span>
+                                    </li>
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; margin-bottom: 6px; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>Z型の読み順に沿って、説明がなくても内容を追える。</span>
+                                    </li>
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>審査基準の理解や手描きスケッチを通じ、表現しながら考えを深めるプロセスが良い。</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Logical Design賞 -->
+            <div class="winner-card award-logical" id="logical" data-category="logical">
+                <div class="winner-card-header">
+                    <div class="award-badge-large">
+                        <i data-lucide="git-merge"></i> Logical Design賞
+                    </div>
+                    <span class="award-subtitle"></span>
+                </div>
+                <div class="winner-card-body">
+                    <div class="winner-meta-grid">
+                        <div class="winner-preview-box" onclick="openWorkModal('logical')">
+                            <img src="./assets/winner_logical.png" alt="Logical Design賞 受賞作品">
+                            <div class="preview-overlay-btn">
+                                <i data-lucide="maximize-2"></i> 拡大して見る
+                            </div>
+                        </div>
+                        <div class="winner-info-content">
+                            <h3 class="work-title">多くの情報を保ちながら、論理構造まで読み取れる設計が施された作品</h3>
+                            <div class="winner-author-info">
+                                <i data-lucide="user-check" style="color: var(--c-primary);"></i>
+                                <div>
+                                    <div class="winner-author-name">藤田　諒子 氏</div>
+                                    <div class="winner-author-org">北海道大学　デザイナー</div>
+                                </div>
+                            </div>
+                            <div class="evaluation-box">
+                                <h5><i data-lucide="check-circle"></i> 選考理由・受賞のポイント</h5>
+                                <ul style="list-style: none; margin-top: 8px; padding-left: 0;">
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; margin-bottom: 6px; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>全体像のロジックチャートと本事業の取り組みを分割した２層構造が独創的。</span>
+                                    </li>
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; margin-bottom: 6px; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>N型の視線の動きで、全体像と本事業の関係性が理解しやすい。</span>
+                                    </li>
+                                    <li
+                                        style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #4B5563; line-height: 1.6;">
+                                        <i data-lucide="check-circle-2"
+                                            style="color: #D97706; flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px;"></i>
+                                        <span>基礎のロジック整理に、AIにはできない人の思考が表れている。</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <i data-lucide="pen-tool"></i>
+                ゆるコンペ
+            </div>
+            <div class="footer-links">
+                <a href="index.html#about">概要</a>
+                <a href="index.html#rules">応募資格</a>
+                <a href="winners.html">受賞作品</a>
+                <a href="workshop/index.html">ワークショップ</a>
+                <a href="index.html#apply">エントリー</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>主催：RA協議会スキルプログラム専門委員会</p>
+            <p>後援：横浜国立大学研究推進機構URA育成教育研究センター</p>
+        </div>
+    </footer>
+
+    <!-- Work Preview Detail Modal -->
+    <div id="workModal" class="modal">
+        <div class="modal-overlay" onclick="closeWorkModal()"></div>
+        <div class="winner-modal-body modal-content">
+            <button class="modal-close" onclick="closeWorkModal()"><i data-lucide="x"></i></button>
+            <div id="modalWorkContent">
+                <!-- Dynamic Modal Content populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const icon = mobileMenu.classList.contains('active') ? 'x' : 'menu';
+            menuToggle.innerHTML = `<i data-lucide="${icon}"></i>`;
+            lucide.createIcons();
+        });
+
+        // Winner Modal Details Data
+        const workData = {
+            vote: {
+                award: '👑 参加者間投票賞 (Peer Choice Award)',
+                title: '視覚で解き明かす経営改革！未来へつなぐ横国大モデル',
+                author: '渡辺 明美 氏（◯◯大学 研究推進部 URA）',
+                img: './assets/winner_vote.png',
+                desc: '1枚目のポンチ絵では親しみやすいポップイラストで戦略の全体像を図説し、2枚目のアピールシートでは「文字数を50%削減し、視覚アイコンで直感理解を促す」工夫を詳細にドキュメント化しています。'
+            },
+            'good-design': {
+                award: '🎨 Good Design賞',
+                title: 'ひと目で伝わる！国立大学経営改革のビジョンと戦略構造',
+                author: '佐々木 健太 氏（◯◯研究所 URA）',
+                img: './assets/winner_good_design.png',
+                desc: '洗練されたカラーパレットとヘキサゴンレイアウトを採用。視線誘導をコントロールし、重要な経営ピラー（教育・研究・社会貢献・ガバナンス）が一目で認知できる優れたグラフィックデザインです。'
+            },
+            attitude: {
+                award: '💡 Design Attitude賞',
+                title: '読む人によりそう共感型ポンチ絵〜課題から未来像への物語〜',
+                author: '高橋 由美 氏（◯◯大学 産学連携推進機構）',
+                img: './assets/winner_attitude.png',
+                desc: '読む人の感情の変化（困りごと→共感→解決→未来）をストーリーマッピング。読者の立場に寄り添うデザインの姿勢とアピールシートに溢れる熱量が高く審査員に評価されました。'
+            },
+            organized: {
+                award: '📐 Organized Design賞',
+                title: '3大ピラーで整理する経営改革の全体像とロードマップ',
+                author: '中村 拓也 氏（◯◯大学 研究戦略本部 URA）',
+                img: './assets/winner_organized.png',
+                desc: '複雑な計画調書から【人財・組織】【事業・サービス】【基盤・体制】の3大ピラーを抽象・構造化し、実行プロセスとマトリクス型で整理統合した圧倒的な構造化スキルの作品です。'
+            },
+            logical: {
+                award: '🧠 Logical Design賞',
+                title: 'Why/What/Howで説く経営改革の必然性と波及効果',
+                author: '小林 裕介 氏（◯◯機構 企画調整室）',
+                img: './assets/winner_logical.png',
+                desc: 'Why（目的・背景）→ What（戦略目標）→ How（実行策）の論理チェーンを構築。課題解決ツリー、定量KPI推移、影響度・実現可能性マトリクスによる説得力抜群のロジカルデザインです。'
+            }
+        };
+
+        const workModal = document.getElementById('workModal');
+        const modalWorkContent = document.getElementById('modalWorkContent');
+
+        function openWorkModal(key) {
+            const data = workData[key];
+            if (!data) return;
+
+            modalWorkContent.innerHTML = `
+                <div style="text-align: center; display: flex; justify-content: center; align-items: center;">
+                    <img src="${data.img}" class="winner-modal-image-large" alt="${data.title}">
+                </div>
+            `;
+
+            workModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeWorkModal() {
+            workModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && workModal.classList.contains('active')) {
+                closeWorkModal();
+            }
+        });
+    </script>
+</body>
+
+</html>

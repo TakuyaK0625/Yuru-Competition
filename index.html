@@ -43,9 +43,9 @@
     <header class="header">
         <div class="top-announcement">
             <div class="container announcement-container">
-                <span class="announcement-badge">NEW</span>
-                <span class="announcement-text">実施説明会のスライド資料・動画アーカイブを公開しました！</span>
-                <a href="#archive" class="announcement-link">詳細はこちら <i data-lucide="arrow-right"
+                <span class="announcement-badge" style="background: #FFD56F; color: #333;">🎉 WINNERS</span>
+                <span class="announcement-text">ポンチ絵コンペティションの受賞作品（全5賞）を発表しました！</span>
+                <a href="winners.html" class="announcement-link">受賞作品を見る <i data-lucide="arrow-right"
                         style="width: 12px; height: 12px; vertical-align: middle;"></i></a>
             </div>
         </div>
@@ -56,13 +56,12 @@
             </a>
             <nav class="nav-links">
                 <a href="#about">概要</a>
-                <a href="#archive">説明会</a>
                 <a href="#rules">応募資格</a>
                 <a href="#theme">お題</a>
                 <a href="#schedule">日程</a>
                 <a href="#judges">審査員</a>
+                <a href="winners.html" class="nav-highlight">🏆 受賞作品</a>
                 <a href="workshop/index.html">ワークショップ</a>
-                <a href="#apply" class="btn btn-sm btn-outline">エントリー</a>
             </nav>
             <button class="menu-btn" aria-label="Menu" id="menuToggle">
                 <i data-lucide="menu"></i>
@@ -73,13 +72,12 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="#about">概要</a>
-        <a href="#archive">説明会</a>
         <a href="#rules">応募資格</a>
         <a href="#theme">お題</a>
         <a href="#schedule">日程</a>
         <a href="#judges">審査員</a>
+        <a href="winners.html" style="font-weight: bold; color: var(--c-primary);">🏆 受賞作品</a>
         <a href="workshop/index.html">ワークショップ</a>
-        <a href="#apply" class="btn btn-primary">エントリー</a>
     </div>
 
     <!-- Hero Section -->
@@ -104,21 +102,21 @@
                 <div class="shape shape-1"></div>
                 <div class="shape shape-2"></div>
             </div>
-        </div>
     </section>
 
-    <!-- Explanatory Meeting Archive Section -->
-    <section id="archive" class="section-archive">
-        <div class="container">
-            <div class="archive-simple-content animate-fade-in">
-                <span class="badge badge-archive-simple">🎥 アーカイブ公開中</span>
-                <h2>説明会資料・動画 <i data-lucide="presentation" class="icon-inline"></i></h2>
-                <p>先日開催された「実施説明会」のスライド資料と録画動画を公開しました。作品制作のヒントとしてぜひご活用ください。</p>
-                <a href="https://www.dropbox.com/scl/fo/8bowk5b487u7ny4cewzrl/APWYStRfER568LuGBSQzhY0?rlkey=g7xrlwrfufiqhjvp84kgzi90b&st=3so3pr4y&dl=0"
-                    target="_blank" class="btn btn-primary btn-lg">
-                    説明会アーカイブを見る (Dropbox) <i data-lucide="external-link"></i>
-                </a>
+    <!-- Winners Announcement Banner Section -->
+    <section class="section" style="padding: 40px 0; background: linear-gradient(135deg, #FFF9F2 0%, #FFEFE5 100%); border-bottom: 2px dashed var(--c-primary);">
+        <div class="container" style="text-align: center;">
+            <div style="display: inline-flex; align-items: center; gap: 8px; background: var(--c-primary); color: white; padding: 6px 16px; border-radius: var(--radius-pill); font-weight: bold; font-size: 14px; margin-bottom: 12px;">
+                <i data-lucide="trophy"></i> 受賞作品決定！
             </div>
+            <h2 style="font-size: 28px; margin-bottom: 12px; color: var(--c-text);">🎉 「ポンチ絵コンペティション」受賞作品を発表しました！</h2>
+            <p style="font-size: 16px; color: var(--c-text-light); max-width: 700px; margin: 0 auto 20px; line-height: 1.7;">
+                参加者間投票賞、Good Design賞、Design Attitude賞、Organized Design賞、Logical Design賞の全5賞が決定！受章者の素晴らしいポンチ絵と工夫、審査員講評を特設ページで公開しています。
+            </p>
+            <a href="winners.html" class="btn btn-primary btn-lg" style="box-shadow: 0 6px 20px rgba(255, 123, 84, 0.4);">
+                🏆 受賞作品ページを見る <i data-lucide="arrow-right"></i>
+            </a>
         </div>
     </section>
 
@@ -161,12 +159,14 @@
             <div class="rules-container">
                 <div class="rule-box">
                     <h3>👥 応募資格</h3>
+                    <p style="margin:8px">以下のいずれかに該当する方がご参加いただけます。</p>
                     <ul class="check-list">
                         <li><i data-lucide="check-circle-2"></i> <strong>RA協議会会員</strong>の方</li>
                         <li><i data-lucide="check-circle-2"></i>
                             <div>
                                 「ゆるコンペワークショップ：ポンチ絵編」に参加された方<br>
-                                <a href="workshop/index.html" style="color: var(--c-primary); text-decoration: underline; font-weight: bold; font-size: 15px; display: inline-block; margin-top: 4px;">（開催報告はこちら）</a>
+                                <a href="workshop/index.html"
+                                    style="color: var(--c-primary); text-decoration: underline; font-weight: bold; font-size: 15px; display: inline-block; margin-top: 4px;">（開催報告はこちら）</a>
                             </div>
                         </li>
                     </ul>
@@ -213,6 +213,9 @@
                     <li><i data-lucide="check-circle-2"></i>
                         <div>
                             <strong>A4横で計2枚のPDFファイル</strong>を作成してください。
+                            <small
+                                style="font-size: 15px; color: var(--c-text-light); font-weight: normal; display: block; margin-top: 4px;">※
+                                ファイル名は「氏名_日付.pdf」にしてください（例：田中太郎_0812.pdf）</small>
                             <ul style="list-style: none; padding-left: 16px; margin-top: 12px;">
                                 <li style="margin-bottom: 8px; display: block;"><strong
                                         style="color: var(--c-primary);">1枚目:</strong> 事業のビジョン、目的、取組を中心に「ポンチ絵」で表現</li>
@@ -280,7 +283,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">６月30日（火）</div>
                     <div class="timeline-content">
-                        <h4>エントリー〆切</h4>
+                        <h4>事前エントリー</h4>
                         <p>人数把握のため事前エントリーにご協力ください。</p>
                     </div>
                 </div>
@@ -364,16 +367,25 @@
     <!-- Apply (CTA) Section -->
     <section id="apply" class="cta-section">
         <div class="container">
-            <div class="cta-box">
-                <h2>さぁ、ポンチ絵の腕試しをしよう！</h2>
-                <p>「まだ自信がない…」という方も、この機会にみんなと一緒に実践してみませんか？まずはエントリーボタンからご登録をお願いします！（Google Formへ遷移します）</p>
-                <a href="https://forms.gle/M8hG1rNooPNb14QD6" target="_blank" class="btn btn-primary btn-xl">エントリーする <i
-                        data-lucide="arrow-right"></i></a>
-                <p class="cta-note">
-                    お問い合わせは、<a href="https://forms.gle/kbM6Da1PVxoc7uKL7" target="_blank"
-                        style="color: white; text-decoration: underline; font-weight: bold;">お問い合わせフォーム</a>よりお願いいたします。
-                </p>
+            <div class="cta-grid">
+                <!-- 左カラム：事前エントリー -->
+                <div class="cta-card entry-card">
+                    <h3>1. エントリー</h3>
+                    <p>コンペへの参加登録を行います。人数把握のため、まずはエントリーをお願いします。</p>
+                    <a href="https://forms.gle/M8hG1rNooPNb14QD6" target="_blank"
+                        class="btn btn-primary btn-cta">エントリーする <i data-lucide="arrow-right"></i></a>
+                </div>
+                <!-- 右カラム：ポンチ絵投稿 -->
+                <div class="cta-card submit-card">
+                    <h3>2. ポンチ絵の投稿</h3>
+                    <p>作成した作品（A4横で計2枚のPDF：ポンチ絵、アピールシート）はこちらのフォームから投稿してください。</p>
+                    <a href="https://forms.gle/QEzpR165iPy9GquUA" target="_blank"
+                        class="btn btn-primary btn-cta">作品を投稿する <i data-lucide="arrow-right"></i></a>
+                </div>
             </div>
+            <p class="cta-inquiry">
+                お問い合わせは、<a href="https://forms.gle/kbM6Da1PVxoc7uKL7" target="_blank">お問い合わせフォーム</a>よりお願いいたします。
+            </p>
         </div>
     </section>
 

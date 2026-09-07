@@ -731,45 +731,116 @@ img[src*="judge_tokuda"] {
     padding: 100px 0;
 }
 
-.cta-box {
-    background: linear-gradient(135deg, var(--c-primary), #FF9E63);
-    border-radius: var(--radius-lg);
-    padding: 80px 40px;
-    text-align: center;
-    color: white;
-    box-shadow: 0 20px 40px rgba(255, 123, 84, 0.3);
-    position: relative;
-    overflow: hidden;
+.cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
-.cta-box h2 {
+.cta-card {
+    border-radius: var(--radius-lg);
+    padding: 60px 40px;
+    text-align: center;
     color: white;
-    font-size: 40px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--trans);
+}
+
+.cta-card:hover {
+    transform: translateY(-8px);
+}
+
+.cta-card.entry-card {
+    background: linear-gradient(135deg, var(--c-primary), #FF9E63);
+    box-shadow: 0 20px 40px rgba(255, 123, 84, 0.25);
+}
+
+.cta-card.submit-card {
+    background: linear-gradient(135deg, #4A9B90, var(--c-tertiary));
+    box-shadow: 0 20px 40px rgba(74, 155, 144, 0.25);
+}
+
+.cta-card-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 24px;
 }
 
-.cta-box p {
-    font-size: 18px;
-    max-width: 700px;
-    margin: 0 auto 40px;
-    opacity: 0.9;
+.cta-card-icon svg {
+    width: 36px;
+    height: 36px;
+    color: white;
 }
 
-.cta-box .btn-primary {
+.cta-card h3 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.cta-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.95;
+    margin-bottom: 32px;
+    flex-grow: 1;
+    max-width: 420px;
+}
+
+.cta-card .btn-cta {
     background-color: white;
+    font-size: 18px;
+    padding: 14px 36px;
+    width: 100%;
+    max-width: 280px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.entry-card .btn-cta {
     color: var(--c-primary);
 }
 
-.cta-box .btn-primary:hover {
+.entry-card .btn-cta:hover {
     background-color: var(--c-secondary);
     color: #5A4711;
+    box-shadow: 0 14px 25px rgba(255, 213, 111, 0.4);
 }
 
-.cta-note {
-    margin-top: 24px !important;
-    font-size: 14px !important;
-    margin-bottom: 0 !important;
-    opacity: 0.7 !important;
+.submit-card .btn-cta {
+    color: #3b7d74;
+}
+
+.submit-card .btn-cta:hover {
+    background-color: var(--c-secondary);
+    color: #5A4711;
+    box-shadow: 0 14px 25px rgba(255, 213, 111, 0.4);
+}
+
+.cta-inquiry {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--c-text-light);
+    font-size: 15px;
+}
+
+.cta-inquiry a {
+    color: var(--c-primary);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.cta-inquiry a:hover {
+    color: var(--c-primary-dark);
 }
 
 /* Footer */
@@ -855,6 +926,11 @@ img[src*="judge_tokuda"] {
     .rules-container {
         grid-template-columns: 1fr;
     }
+
+    .cta-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -870,12 +946,12 @@ img[src*="judge_tokuda"] {
         padding: 60px 0;
     }
 
-    .cta-box {
-        padding: 60px 20px;
+    .cta-card {
+        padding: 40px 24px;
     }
 
-    .cta-box h2 {
-        font-size: 32px;
+    .cta-card h3 {
+        font-size: 24px;
     }
 
     .footer-content {
@@ -1091,4 +1167,423 @@ img[src*="judge_tokuda"] {
 
 .announcement-link:hover {
     color: var(--c-secondary);
+}
+
+/* Nav Highlight Link */
+.nav-highlight {
+    background-color: #FFF3E0;
+    color: var(--c-primary) !important;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    border: 1.5px solid var(--c-primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-highlight:hover {
+    background-color: var(--c-primary);
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 123, 84, 0.3);
+}
+
+.nav-links a.active-link {
+    color: var(--c-primary);
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   Winners Page Styles
+   ========================================================================== */
+.winners-hero {
+    background: linear-gradient(135deg, #FFF9F2 0%, #FFF0E5 50%, #F5F7FF 100%);
+    padding: 160px 0 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.winners-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    color: var(--c-primary);
+    padding: 8px 20px;
+    border-radius: var(--radius-pill);
+    font-weight: 800;
+    font-size: 15px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(255, 123, 84, 0.2);
+    margin-bottom: 20px;
+}
+
+.winners-hero-title {
+    font-size: 42px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    color: #2D3748;
+}
+
+.winners-hero-subtitle {
+    font-size: 17px;
+    color: var(--c-text-light);
+    max-width: 720px;
+    margin: 0 auto 32px;
+    line-height: 1.8;
+}
+
+/* Award Filter Tabs */
+.award-filter-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.filter-tab {
+    padding: 10px 20px;
+    border-radius: var(--radius-pill);
+    background: white;
+    border: 2px solid #E2E8F0;
+    color: var(--c-text);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--trans);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.filter-tab:hover {
+    border-color: var(--c-primary);
+    color: var(--c-primary);
+}
+
+.filter-tab.active {
+    background: var(--c-primary);
+    color: white;
+    border-color: var(--c-primary);
+    box-shadow: 0 4px 14px rgba(255, 123, 84, 0.35);
+}
+
+/* Winners Grid & Cards */
+.winners-section {
+    padding: 60px 0 90px;
+    background-color: var(--c-bg-light);
+}
+
+.winners-section .container {
+    max-width: 1240px;
+}
+
+.winner-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    margin-bottom: 50px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--trans);
+    scroll-margin-top: 130px;
+}
+
+.winner-card:hover {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+/* Award Header Colors */
+.winner-card-header {
+    padding: 24px 32px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.award-vote .winner-card-header {
+    background: linear-gradient(135deg, #FF9F43 0%, #FF6B6B 100%);
+}
+
+.award-good-design .winner-card-header {
+    background: linear-gradient(135deg, #A55EEA 0%, #45AAF2 100%);
+}
+
+.award-attitude .winner-card-header {
+    background: linear-gradient(135deg, #26DE81 0%, #20BF6B 100%);
+}
+
+.award-organized .winner-card-header {
+    background: linear-gradient(135deg, #3B3B98 0%, #18DCFF 100%);
+}
+
+.award-logical .winner-card-header {
+    background: linear-gradient(135deg, #FD79A8 0%, #E84393 100%);
+}
+
+.award-badge-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.award-subtitle {
+    font-size: 13px;
+    opacity: 0.9;
+    font-weight: normal;
+    display: block;
+    margin-top: 2px;
+}
+
+.winner-card-body {
+    padding: 36px;
+}
+
+.winner-meta-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 36px;
+    align-items: start;
+}
+
+@media (max-width: 960px) {
+    .winner-meta-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.winner-preview-box {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 3px solid var(--c-border);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    background: #FAFAFA;
+}
+
+.winner-preview-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.winner-preview-box:hover img {
+    transform: scale(1.02);
+}
+
+.preview-overlay-btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    backdrop-filter: blur(4px);
+    transition: var(--trans);
+}
+
+.winner-preview-box:hover .preview-overlay-btn {
+    background: var(--c-primary);
+}
+
+.winner-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.work-title {
+    font-size: 24px;
+    color: var(--c-text);
+    line-height: 1.4;
+    border-bottom: 2px solid var(--c-border);
+    padding-bottom: 12px;
+}
+
+.winner-author-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #F8FAFC;
+    padding: 14px 20px;
+    border-radius: var(--radius-sm);
+    border-left: 4px solid var(--c-primary);
+}
+
+.winner-author-name {
+    font-size: 23px;
+    font-weight: 800;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: var(--c-text);
+    line-height: 1.3;
+}
+
+.winner-author-org {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--c-text-light);
+    margin-top: 3px;
+}
+
+.evaluation-box {
+    background: #FFFBF0;
+    border: 1.5px dashed #FFD56F;
+    border-radius: var(--radius-sm);
+    padding: 20px;
+}
+
+.evaluation-box h5 {
+    font-size: 15px;
+    color: #D97706;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.evaluation-box p {
+    font-size: 14px;
+    color: #4B5563;
+    line-height: 1.6;
+}
+
+.comment-tabs-container {
+    margin-top: 10px;
+}
+
+.comment-card {
+    background: #F1F5F9;
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    margin-top: 12px;
+}
+
+.comment-card-header {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--c-text);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.comment-card p {
+    font-size: 14px;
+    color: var(--c-text-light);
+    line-height: 1.6;
+}
+
+/* Overall Judge Review Section */
+.overall-review-section {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-card);
+    margin-top: 60px;
+}
+
+.overall-review-section h3 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--c-text);
+}
+
+.overall-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.overall-card {
+    background: var(--c-bg-light);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    border: 1px solid var(--c-border);
+}
+
+.overall-card-judge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.overall-card-judge img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.overall-card-judge h4 {
+    font-size: 16px;
+    color: var(--c-text);
+}
+
+.overall-card-judge span {
+    font-size: 12px;
+    color: var(--c-text-light);
+    display: block;
+}
+
+.overall-card p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--c-text-light);
+}
+
+/* Large Viewer Modal */
+.winner-modal-body {
+    max-width: 900px;
+    width: 90%;
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.winner-modal-image {
+    width: 100%;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--c-border);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .winners-hero-title {
+        font-size: 30px;
+    }
+    
+    .winner-card-header {
+        padding: 16px 20px;
+    }
+    
+    .winner-card-body {
+        padding: 20px;
+    }
+    
+    .work-title {
+        font-size: 20px;
+    }
 }
